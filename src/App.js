@@ -1,14 +1,19 @@
-import Counter from "./components/Counter";
+import ToggleBox from "./components/ToggleBox";
 import InputField from "./components/InputField";
 import Posts from "./components/Posts";
-import Rectangle from "./components/Rectangle";
+import MoveBox from "./components/MoveBox";
+import HookIncrement from './components/HookIncrement'
 
 function App() {
   return (
     <div className="App">
-      {/* <Counter defaultStart={10} title="Title" />
-      <Rectangle /> */}
-      <InputField />
+      <HookIncrement defaultStart={10} text={"Hooks"}/>
+      <hr />
+      <ToggleBox text={"ToggleBox"}/>
+      <hr />
+      <MoveBox text={"MoveBox"}/>
+      <hr />
+      <InputField />    
       <Posts />
     </div>
   );
